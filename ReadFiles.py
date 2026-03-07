@@ -71,3 +71,14 @@ with open("demofile.txt") as f:
 #This file is for testing purposes.
 
 #Good Luck!
+
+ex9
+file_path = 'example.txt'
+
+with open(file_path, 'r') as file:
+    lines_list = file.readlines()
+
+print(lines_list)
+
+#RESULT:
+#['Hello,\n', 'world\n', '!']
