@@ -1,17 +1,18 @@
 import os
 
-print("Я тут:", os.getcwd())
+print("Location", os.getcwd())
 
 
 os.makedirs("projects/python/scripts", exist_ok=True)
 
 
 os.chdir("projects/python")
-print("Теперь я тут:", os.getcwd())
+print("Changed location:", os.getcwd())
 
 
 items = os.listdir(".")
-print("Содержимое:", items)
+print("Consist of", items)
 
 
 os.rmdir("scripts")
+
