@@ -10,12 +10,12 @@ sub.mkdir(parents=True, exist_ok=True)
 (sub / "utils.py").touch()
 (sub / "notes.txt").touch()
 
-print(f"Содержимое {sub}: {os.listdir(sub)}")
+print(f"{sub}: {os.listdir(sub)}")
 
 py_files = list(sub.glob("*.py"))
-print(f"Найдены Python файлы: {[f.name for f in py_files]}")
+print(f"{[f.name for f in py_files]}")
 
 target_dir = root / "important"
 target_dir.mkdir(exist_ok=True)
 shutil.move(sub / "main.py", target_dir / "main.py")
-print(f"--- Файл main.py перемещен в {target_dir}")
+print(f"-File main.py moved to {target_dir}")
